@@ -463,7 +463,7 @@ https://blog.csdn.net/yu876876/article/details/81698269
 **socket通信总结**
 https://blog.csdn.net/linghu_java/article/details/43488919
 
-https://www.cnblogs.com/fuchongjundream/p/3914696.html
+https://blog.csdn.net/qq_34272008/article/details/87454189
 （包括了网络字节序和主机字节序）
 
 ![img](https://uploadfiles.nowcoder.com/images/20190315/308571_1552654678444_69CF8398BCC9F204991E623723D022E7)
