@@ -78,6 +78,8 @@ final关键字修饰类或者成员函数：修饰的成员不能重写或者修
 
 
 
+
+
 ***虚继承*：解决多重继承中命名冲突和数据冗余**
 
 虚基类的目的是为了让某个子类作出声明，承诺愿意共享它的基类，这个被共享的基类就被称为虚基类。
@@ -246,7 +248,7 @@ auto：根据右边的初始值value推导出var的类型；要求变量必须�
 时间复杂度相同，为什么快速排序一般优于归并排序？
 思路：原地操作 不需要辅助数组；相邻位置的内存比分散的内存，访问更快 特别是将列表均匀的分成两半时
 
-c++四种转换形式：
+**c++四种转换形式：**
 去const属性用const_cast
 基本类型转换用static_cast （跟强制转换相比 更安全）
 多态类之间的类型转换用dynamic_cast
@@ -496,6 +498,10 @@ https://blog.csdn.net/qq_34272008/article/details/87454189
 
 ![img](https://uploadfiles.nowcoder.com/images/20190315/308571_1552654678444_69CF8398BCC9F204991E623723D022E7)
 
+![image](https://images0.cnblogs.com/blog/120296/201502/171651582676412.png)
+
+
+
 分为UDP和TCP两种。
 
 accept() send() recv()
@@ -644,3 +650,51 @@ https://www.jianshu.com/p/c6f8bbfc0bbf
 https://blog.csdn.net/weixin_40853073/article/details/81451792
 
 该数据成员的整数倍的偏移量。
+
+**为什么要内存对齐？**
+
+1.平台原因(移植原因)：不是所有的硬件平台都能访问任意地址上的任意数据的；某些硬件平台只能在某些地址处取某些特定类型的数据，否则抛出硬件异常。
+2.性能原因：数据结构(尤其是栈)应该尽可能地在自然边界上对齐。原因在于，为了访问未对齐的内存，处理器需要作两次内存访问；而对齐的内存访问仅需要一次访问。
+————————————————
+版权声明：本文为CSDN博主「I_l_I」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_40853073/article/details/81451792
+
+
+
+**内联函数**
+
+https://blog.csdn.net/qq_33757398/article/details/81390151
+
+
+
+**静态链接\动态链接**
+
+https://blog.csdn.net/kang___xi/article/details/80210717
+
+
+
+**关于虚函数指针的底层原理(类的内存分配)**
+
+https://blog.csdn.net/u011012049/article/details/48767917
+
+
+
+**多继承(菱形继承)**
+
+https://blog.51cto.com/zimomo/1784074
+
+
+
+**浅复制 深复制**
+
+https://blog.csdn.net/weibo1230123/article/details/81839269
+
+
+
+**智能指针**
+
+http://c.biancheng.net/view/430.html
+
+托管计数.
+
+reset 成员函数可以使得对象解除对原托管指针的托管（如果有的话），并托管新的指针。原指针的托管计数会减 1。
