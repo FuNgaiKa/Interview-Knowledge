@@ -44,16 +44,16 @@ void merge(vector<int> &a,int l,int r,int mid)
  
 void merge_sort(vector<int> &a,int l,int r)
 {
-    if(l>=r){
-    	return;
+	if(l>=r){
+    	  return;
 	}
 	
 	
 	int mid=(l+r)/2;
-	
+
 	merge_sort(a,l,mid);
 	merge_sort(a,mid+1,r);
-	
+
 	merge(a,l,r,mid);	
 	
 }
